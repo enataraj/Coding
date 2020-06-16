@@ -20,6 +20,19 @@ public class SearchInBST {
 
     }
 
+    public TreeNode searchBSTRecursive(TreeNode root, int val) {
+
+
+        if (root == null || root.val == val) {
+            return root;
+        } else if (root.val < val) {
+            return searchBSTRecursive(root.right, val);
+        } else {
+            return searchBSTRecursive(root.left, val);
+        }
+
+    }
+
 }
 
 class TreeNode {

@@ -3,13 +3,44 @@ package tree.util;
 public class TreeUtil {
 
     public static TreeNode constructBinaryTree() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
+        root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        return root;
+    }
+
+    public static TreeNode constructBinarySearchTree() {
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(5);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);
+        return root;
+    }
+
+    public static TreeNode constructBinaryTreeForPathSum3() {
         TreeNode root = new TreeNode(10);
-        root.left = new TreeNode(8);
-        root.right = new TreeNode(16);
-        root.left.left = new TreeNode(6);
-        root.left.right = new TreeNode(9);
-        root.right.left = new TreeNode(12);
-        root.right.right = new TreeNode(20);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(-3);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(2);
+        root.right.right = new TreeNode(11);
+        root.left.left.left = new TreeNode(3);
+        root.left.left.right = new TreeNode(-2);
+        root.left.right.right = new TreeNode(1);
+        return root;
+    }
+
+    public static TreeNode constructBinaryTreetmp() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
         return root;
     }
 
@@ -45,18 +76,18 @@ public class TreeUtil {
             return;
         }
         postOrderTraversal(root.left);
-        System.out.print(" " + root.val);
         postOrderTraversal(root.right);
+        System.out.print(" " + root.val);
     }
-    
+
     public static TreeNode invertBinaryTree(TreeNode root) {
         if (root == null) {
             return null;
         }
-        
+
         invertBinaryTree(root.left);
         invertBinaryTree(root.right);
-        
+
         TreeNode temp = root.left;
         root.left = root.right;
         root.right = temp;

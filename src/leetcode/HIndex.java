@@ -18,13 +18,13 @@ public class HIndex {
         return hIndex;
     }
 
-    public int hIndexSimple(int[] citations) {
-        for (int i = 0; i < citations.length; i++) {
-            if (citations[i] >= citations.length - i)
-                return citations.length - i;
+        public int hIndexSimple(int[] citations) {
+            for (int i = 0; i < citations.length; i++) {
+                if (citations[i] >= citations.length - i)
+                    return citations.length - i;
+            }
+            return 0;
         }
-        return 0;
-    }
 
     public int hIndex(int[] citations) {
         int hIndex = 0;

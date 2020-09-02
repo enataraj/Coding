@@ -125,7 +125,7 @@ public class LargestTImeFrom {
             else
                 tmp += ":";            
         }
-        if(tmp.size() == 5) {
+        if(tmp.length() == 5) {
             // validate the minutes
             if(stoi(tmp.substr(3)) >= 60)
                 return;

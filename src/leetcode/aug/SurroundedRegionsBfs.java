@@ -1,4 +1,4 @@
-package leetcode.trie;
+package leetcode.aug;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -4,17 +4,39 @@ import java.util.List;
 
 public class BuildLinkedList {
 
-    public Node buildList(List<Integer> numbers) {
-        Node head = new Node(numbers.get(0));
-        Node currentNode = head;
+    public static ListNode buildList(List<Integer> numbers) {
+        ListNode head = new ListNode(numbers.get(0));
+        ListNode currentListNode = head;
 
         for (int i = 1; i < numbers.size(); i++) {
-            Node node = new Node(numbers.get(i));
-            currentNode.next = node;
-            currentNode = currentNode.next;
+            ListNode ListNode = new ListNode(numbers.get(i));
+            currentListNode.next = ListNode;
+            currentListNode = currentListNode.next;
 
         }
         return head;
+    }
+
+    public static ListNode buildList(int[] numbers) {
+        ListNode head = new ListNode(numbers[0]);
+        ListNode currentListNode = head;
+
+        for (int i = 1; i < numbers.length; i++) {
+            ListNode ListNode = new ListNode(numbers[i]);
+            currentListNode.next = ListNode;
+            currentListNode = currentListNode.next;
+
+        }
+        return head;
+    }
+
+    public static void printListNode(ListNode head) {
+
+        ListNode node = head;
+        while (node != null) {
+            System.out.print("  " + node.val);
+            node = node.next;
+        }
     }
 
 }

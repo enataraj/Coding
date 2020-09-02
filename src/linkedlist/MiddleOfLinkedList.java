@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import linkedlist.util.BuildLinkedList;
-import linkedlist.util.Node;
+import linkedlist.util.ListNode;
 
 public class MiddleOfLinkedList {
 
@@ -22,23 +22,23 @@ public class MiddleOfLinkedList {
 
         BuildLinkedList linkedList = new BuildLinkedList();
 
-        Node head = linkedList.buildList(list);
-       // printList(head);
+        ListNode head = linkedList.buildList(list);
+        // printList(head);
 
         findMiddleElement(head);
 
     }
 
-    public static void printList(Node node) {
+    public static void printList(ListNode node) {
         while (node != null) {
             System.out.println(node.val);
             node = node.next;
         }
     }
 
-    private static void findMiddleElement(Node node) {
-        Node slowPtr = node;
-        Node fastPtr = node;
+    private static void findMiddleElement(ListNode node) {
+        ListNode slowPtr = node;
+        ListNode fastPtr = node;
         while (fastPtr != null && fastPtr.next != null) {
             slowPtr = slowPtr.next;
             fastPtr = fastPtr.next.next;
@@ -47,19 +47,18 @@ public class MiddleOfLinkedList {
         System.out.println("Middle Node : " + slowPtr.val);
 
     }
-    
-    /* Other two approaches 
-    
-    Two Parase
-    
-    *  Find the lenght of the Linked List and traversal
-    *  traverse middle and rerutn
-    *  
-    *
-     
-     // Single Pass but O(n) space 
-      * Traverse and put into list or array 
-      * get the middle element 
-    
+
+    /*
+     * Other two approaches
+     * 
+     * Two Parase
+     * 
+     * Find the lenght of the Linked List and traversal traverse middle and rerutn
+     * 
+     *
+     * 
+     * // Single Pass but O(n) space Traverse and put into list or array get the
+     * middle element
+     * 
      */
 }

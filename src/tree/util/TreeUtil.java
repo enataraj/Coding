@@ -22,6 +22,16 @@ public class TreeUtil {
         return root;
     }
 
+    public static TreeNode constructBinarySearchTree1() {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(6);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(7);
+        root.left.right = new TreeNode(9);
+        return root;
+    }
+
     public static TreeNode constructBinaryTreeForPathSum3() {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(5);

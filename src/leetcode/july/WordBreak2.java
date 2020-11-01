@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class WordBreak {
+public class WordBreak2 {
     
     public List<String> wordBreak(String s, List<String> wordDict) {
 

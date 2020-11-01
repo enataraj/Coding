@@ -29,6 +29,20 @@ public class BuildLinkedList {
         }
         return head;
     }
+    
+    public static ListNode buildListWithLoop() {
+        ListNode head = new ListNode(10);
+        
+        ListNode node = head;
+        node.next = new ListNode(11); 
+        node.next.next = new ListNode(12); 
+        node.next.next.next = new ListNode(13); 
+        node.next.next.next.next = new ListNode(14); 
+        node.next.next.next.next.next =node.next; 
+        
+        return head;
+        
+    }
 
     public static void printListNode(ListNode head) {
 

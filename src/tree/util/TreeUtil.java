@@ -12,16 +12,42 @@ public class TreeUtil {
         root.right.right = new TreeNode(7);
         return root;
     }
-    
+
+    public static TreeNode constructBinaryTreeTilt() {
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(9);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(5);
+        // root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        return root;
+    }
+
+    public static TreeNode constructBinaryTreeAncestorDiff() {
+        TreeNode root = new TreeNode(8);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(10);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(6);
+        root.left.right.left = new TreeNode(4);
+        root.left.right.right = new TreeNode(7);
+        // root.right.left = new TreeNode(6);
+        root.right.right = new TreeNode(7);
+        root.right.right = new TreeNode(14);
+        root.right.right.left = new TreeNode(13);
+        return root;
+    }
+
     public static TreeNode constructBinaryTreeDepth() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
-        
+
         return root;
     }
-    
+
     public static TreeNode constructBinaryTreeBinary() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(1);
@@ -40,6 +66,29 @@ public class TreeUtil {
         root.right = new TreeNode(5);
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(3);
+        return root;
+    }
+    
+    public static TreeNode constructTreeRobber3() {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(4);
+        root.right = new TreeNode(5);
+        root.left.left = new TreeNode(1);
+        root.left.right = new TreeNode(3);
+        root.right.right = new TreeNode(1);
+        return root;
+    }
+
+    public static TreeNode constructBinarySearchTreeForRangeSum() {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(5);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(7);
+        root.left.left.left = new TreeNode(1);
+        root.left.right.left = new TreeNode(6);
+        root.right.left = new TreeNode(13);
+        root.right.right = new TreeNode(18);
         return root;
     }
 

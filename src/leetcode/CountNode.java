@@ -1,5 +1,7 @@
 package leetcode;
 
+import tree.util.TreeNode;
+
 public class CountNode {
 
 	public int countNodes(TreeNode root) {

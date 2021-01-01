@@ -1,7 +1,7 @@
 package leetcode;
 
 public class SearchInBST {
-    public TreeNode searchBST(TreeNode root, int val) {
+    public TreeNode1 searchBST(TreeNode1 root, int val) {
 
         while (root != null) {
 
@@ -20,7 +20,7 @@ public class SearchInBST {
 
     }
 
-    public TreeNode searchBSTRecursive(TreeNode root, int val) {
+    public TreeNode1 searchBSTRecursive(TreeNode1 root, int val) {
 
 
         if (root == null || root.val == val) {
@@ -35,19 +35,19 @@ public class SearchInBST {
 
 }
 
-class TreeNode {
+class TreeNode1 {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreeNode1 left;
+    TreeNode1 right;
 
-    TreeNode() {
+    TreeNode1() {
     }
 
-    TreeNode(int val) {
+    TreeNode1(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    TreeNode1(int val, TreeNode1 left, TreeNode1 right) {
         this.val = val;
         this.left = left;
         this.right = right;

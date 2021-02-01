@@ -156,6 +156,28 @@ public class TreeUtil {
         
         return root;
     }
+    public static TreeNode constructBalancedBinaryTreeVertical() {
+        
+        
+        TreeNode root = new TreeNode(0);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(1);
+        
+        root.left.left = new TreeNode(3);
+        root.left.left.left = new TreeNode(4);
+        root.left.left.right = new TreeNode(5);
+        
+        root.left.left.left.right = new TreeNode(7);
+        root.left.left.right.left = new TreeNode(6);
+        root.left.left.left.right.left = new TreeNode(10);
+        root.left.left.left.right.right = new TreeNode(8);
+        root.left.left.right.left.left = new TreeNode(11);
+        root.left.left.right.left.right = new TreeNode(9);
+        
+       
+     
+        return root;
+    }
     
     public static TreeNode MergeTree1() {
         TreeNode root = new TreeNode(1);

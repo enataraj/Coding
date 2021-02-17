@@ -86,7 +86,7 @@ public class TreeUtil {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
-       root.left.right = new TreeNode(4);
+        root.left.right = new TreeNode(4);
 
         return root;
     }
@@ -142,65 +142,112 @@ public class TreeUtil {
         root.right = new TreeNode(15);
         root.left.left = new TreeNode(3);
         root.left.right = new TreeNode(7);
-        
+
         return root;
     }
-    
+
     public static TreeNode constructBalancedBinaryTree() {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(6);
         root.right = new TreeNode(15);
         root.left.left = new TreeNode(3);
         root.left.right = new TreeNode(7);
-      //  root.left.left.left = new TreeNode(3);
-        
+        // root.left.left.left = new TreeNode(3);
+
         return root;
     }
+    public static TreeNode constructBalancedBinaryTreeBSTToGST() {
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(6);
+        root.left.left = new TreeNode(0);
+        root.left.right = new TreeNode(2);
+        root.left.right.right = new TreeNode(3);
+        root.right.left = new TreeNode(5);
+        root.right.right = new TreeNode(7);
+        root.right.right.right = new TreeNode(8);
+
+        return root;
+    }
+
+    public static TreeNode constructBalancedBinaryTreeRightSideView() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+
+        root.left.right = new TreeNode(5);
+        root.right.right = new TreeNode(4);
+        // root.left.left.left = new TreeNode(3);
+
+        return root;
+    }
+    public static TreeNode constructBalancedBinaryTreeRightSideView1() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+
+        root.left.left = new TreeNode(4);
+        
+        // root.left.left.left = new TreeNode(3);
+
+        return root;
+    }
+
+    public static TreeNode constructBalancedBinaryTreeTrim() {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(6);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(7);
+        root.right.left = new TreeNode(13);
+        root.right.right = new TreeNode(18);
+
+        return root;
+    }
+
     public static TreeNode constructBalancedBinaryTreeVertical() {
-        
-        
+
         TreeNode root = new TreeNode(0);
         root.left = new TreeNode(2);
         root.right = new TreeNode(1);
-        
+
         root.left.left = new TreeNode(3);
         root.left.left.left = new TreeNode(4);
         root.left.left.right = new TreeNode(5);
-        
+
         root.left.left.left.right = new TreeNode(7);
         root.left.left.right.left = new TreeNode(6);
         root.left.left.left.right.left = new TreeNode(10);
         root.left.left.left.right.right = new TreeNode(8);
         root.left.left.right.left.left = new TreeNode(11);
         root.left.left.right.left.right = new TreeNode(9);
-        
-       
-     
+
         return root;
     }
-    
+
     public static TreeNode MergeTree1() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(3);
         root.right = new TreeNode(2);
         root.left.left = new TreeNode(5);
-       
-      //  root.left.left.left = new TreeNode(3);
-        
+
+        // root.left.left.left = new TreeNode(3);
+
         return root;
     }
+
     public static TreeNode MergeTree2() {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
         root.left.right = new TreeNode(4);
         root.right.right = new TreeNode(7);
-       
-      //  root.left.left.left = new TreeNode(3);
-        
+
+        // root.left.left.left = new TreeNode(3);
+
         return root;
     }
-    
+
     public static TreeNode pesudoPalindromicTree() {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(3);
@@ -210,7 +257,6 @@ public class TreeUtil {
         root.right.right = new TreeNode(1);
         return root;
     }
-
 
     public static TreeNode constructBinaryTreeForPathSum3() {
         TreeNode root = new TreeNode(10);

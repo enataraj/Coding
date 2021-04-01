@@ -69,6 +69,15 @@ public class TreeUtil {
         return root;
     }
 
+    public static TreeNode constructBtreeString() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        return root;
+
+    }
+
     public static TreeNode constructBinaryTreeForSmallestSubtree() {
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(5);
@@ -146,6 +155,20 @@ public class TreeUtil {
         return root;
     }
 
+    public static TreeNode constructBinaryTreeForPathSum() {
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(4);
+        root.right = new TreeNode(8);
+        root.left.left = new TreeNode(11);
+        root.left.left.left = new TreeNode(7);
+        root.left.left.right = new TreeNode(2);
+        root.right.left = new TreeNode(13);
+        root.right.right = new TreeNode(4);
+        root.right.right.right = new TreeNode(1);
+
+        return root;
+    }
+
     public static TreeNode constructBalancedBinaryTree() {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(6);
@@ -156,6 +179,33 @@ public class TreeUtil {
 
         return root;
     }
+    
+    public static TreeNode constructVoyageMatch() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        return root;
+    }
+
+    public static TreeNode constructBinaryTreeForPath() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.right = new TreeNode(5);
+        // root.left.left.left = new TreeNode(3);
+
+        return root;
+    }
+
+    public static TreeNode constructTreeForCousins() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right.right = new TreeNode(5);
+        return root;
+    }
+
     public static TreeNode constructBalancedBinaryTreeBSTToGST() {
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(1);
@@ -181,13 +231,14 @@ public class TreeUtil {
 
         return root;
     }
+
     public static TreeNode constructBalancedBinaryTreeRightSideView1() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
 
         root.left.left = new TreeNode(4);
-        
+
         // root.left.left.left = new TreeNode(3);
 
         return root;

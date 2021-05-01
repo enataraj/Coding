@@ -17,7 +17,7 @@ public class MyCircularQueueList {
     public boolean enQueue(int value) {
         if (queue.size() < capacity) {
             queue.add(value);
-            System.out.println("EeQueu "+queue);
+           
             return true;
         }
 
@@ -28,7 +28,7 @@ public class MyCircularQueueList {
 
         if (!queue.isEmpty()) {
             queue.remove(0);
-            System.out.println("DeQueu "+queue);
+           
             return true;
         }
         return false;

@@ -28,8 +28,7 @@ public class PermutationExample {
     }
 
     public static void main(String[] args) {
-        int nums[] = { 1, 3, 2}; 
-     
+        int nums[] = { 1, 3, 2};  
         PermutationExample obj = new PermutationExample();
         obj.generatePermuatation(nums);
     }

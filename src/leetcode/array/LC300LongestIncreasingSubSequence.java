@@ -61,6 +61,7 @@ public class LC300LongestIncreasingSubSequence {
         return len;
     }
     
+    
     public int lengthOfLISDP(int[] nums) {
         if (nums == null || nums.length == 0)
             return 0;

@@ -1,5 +1,8 @@
 package leetcode.trie;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Trie {
 
     TrieNode root;
@@ -20,6 +23,18 @@ public class Trie {
         }
         currentNode.isEnd = true;
     }
-    
-   
+
+    private class TrieNode {
+
+        public Map<Character, TrieNode> map;
+        public boolean isEnd;
+
+        public TrieNode() {
+
+            map = new HashMap<>();
+            isEnd = false;
+
+        }
+
+    }
 }

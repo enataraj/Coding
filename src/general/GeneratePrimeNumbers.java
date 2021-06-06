@@ -1,13 +1,13 @@
 package general;
 
+import java.util.Arrays;
+
 public class GeneratePrimeNumbers {
 
     private static void generatePrimeNumbers(int num) {
 
         boolean prime[] = new boolean[num + 1];
-        for (int i = 0; i < prime.length; i++) {
-            prime[i] = true;
-        }
+        Arrays.fill(prime, false);
 
         for (int i = 2; (i * i) <= num; i++) {
 

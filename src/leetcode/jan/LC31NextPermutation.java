@@ -3,6 +3,19 @@ package leetcode.jan;
 import java.util.Arrays;
 
 public class LC31NextPermutation {
+    
+    /*
+     * Algorithm
+     * =========
+     *  Find the first dip from last (large number to small number)
+     *   nums[i] >  nums[i-1]
+     *   
+     *   Find the number greater than nums[i-1] & swap (lower number and next highest number)
+     *   
+     *   Reverse from i to end of nums
+     *
+     * 
+     */
 
     public void nextPermutation(int[] nums) {
         int firstDescFromRight = nums.length - 2;
@@ -45,4 +58,6 @@ public class LC31NextPermutation {
         System.out.println(Arrays.toString(nums));
     }
 
+    
+   
 }

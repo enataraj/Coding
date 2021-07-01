@@ -1,7 +1,9 @@
 package leetcode.june;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class LC128LongestConsecutiveSequence {
@@ -31,6 +33,24 @@ public class LC128LongestConsecutiveSequence {
             }
         }
         return longestLength;
+    }
+    
+    public int longestConsecutiveHashMap(int[] nums) {
+        int longest = 0;
+        Map<Integer, Integer> count = new HashMap<Integer, Integer>();
+
+        for (int num : nums) {
+            if (count.containsKey(num))
+                continue;
+            int left = count.getOrDefault(num - 1, 0);
+            int right = count.getOrDefault(num + 1, 0);
+            int current = left + right + 1;
+            count.put(num, current);
+            longest = Math.max(longest, current);
+            count.put(num - left, current);
+            count.put(num + right, current);
+        }
+        return longest;
     }
 
     class Solution {

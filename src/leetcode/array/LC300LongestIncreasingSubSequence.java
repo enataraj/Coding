@@ -62,22 +62,7 @@ public class LC300LongestIncreasingSubSequence {
     }
     
     
-    public int lengthOfLISDP(int[] nums) {
-        if (nums == null || nums.length == 0)
-            return 0;
-        int res = 0;
-        int[] dp = new int[nums.length];
-        Arrays.fill(dp, 1); 
-        for (int i = nums.length - 1; i >= 0; --i) {
-            int key = nums[i];
-            for (int j = nums.length - 1; j > i; --j) {
-                if (nums[j] > key)
-                    dp[i] = Math.max(dp[j] + 1, dp[i]);
-            }
-            res = Math.max(res, dp[i]);
-        } 
-        return res;
-    }
+   
 
     public static void main(String[] args) {
         LC300LongestIncreasingSubSequence obj = new LC300LongestIncreasingSubSequence();

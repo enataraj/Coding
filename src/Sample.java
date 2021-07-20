@@ -5,5 +5,9 @@ public class Sample {
         String str = "Elumalai";
         System.out.println(str.substring(3));
     }
+    
+    
+   
+
 
 }

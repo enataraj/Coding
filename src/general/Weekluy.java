@@ -68,6 +68,8 @@ public class Weekluy {
         int[] nums = { 1, 2, 4 };
         Weekluy obj = new Weekluy();
         System.out.println(obj.maxFrequency(nums, 5));
+        
+        System.out.println(Math.log(7));
 
     }
 

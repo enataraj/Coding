@@ -20,5 +20,4 @@ public class LC169MajorityElement {
         }
         return candidate;
     }
-
 }

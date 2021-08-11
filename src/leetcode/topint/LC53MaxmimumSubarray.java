@@ -10,7 +10,5 @@ public class LC53MaxmimumSubarray {
             maxSum = Math.max(currentSum, maxSum);
         }
         return maxSum;
-    }
-    
-    
+    }   
 }

@@ -14,5 +14,4 @@ public class LC206ReverseLinkedList {
         }
         return prev;
     }
-
 }

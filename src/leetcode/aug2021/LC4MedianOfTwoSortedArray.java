@@ -26,7 +26,7 @@ public class LC4MedianOfTwoSortedArray {
      int rightMinX;
      int rightMaxY;
     
-        
+       return 0.0; 
     }
 
 }

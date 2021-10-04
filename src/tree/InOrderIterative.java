@@ -37,5 +37,36 @@ public class InOrderIterative {
         return result;
 
     }
+    
+    
+    class BSTIterator {
+        private TreeNode tree;
+        public BSTIterator(TreeNode root) {
+            tree = root;
+        }
+        
+        public int next() {
+            TreeNode temp = tree;
+            int val = -1;
+            
+            if (temp.left == null) {
+                tree = tree.right;
+                return temp.val;
+            }
+            
+            while (temp.left.left != null) {
+                temp = temp.left;
+            }
+            
+            val = temp.left.val;
+            temp.left = temp.left.right;
+            
+            return val;
+        }
+        
+        public boolean hasNext() {
+            return tree != null;
+        }
+    }
 
 }

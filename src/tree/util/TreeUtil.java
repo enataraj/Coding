@@ -1,6 +1,21 @@
 package tree.util;
 
 public class TreeUtil {
+    
+    public static TreeNode constructBTreeForEqual() {
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(10);
+        root.right = new TreeNode(10);
+        root.right.left = new TreeNode(2);
+        root.right.right = new TreeNode(3);
+        return root;
+    }
+    public static TreeNode constructBTreeForEqual1() {
+        TreeNode root = new TreeNode(0);
+        root.right = new TreeNode(0);
+         return root;
+    }
+
 
     public static TreeNode constructBinaryTree() {
         TreeNode root = new TreeNode(1);

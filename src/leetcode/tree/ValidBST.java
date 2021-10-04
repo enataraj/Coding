@@ -8,7 +8,6 @@ public class ValidBST {
         if (root == null) {
             return true;
         }
-
         return validBSTHelpher(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
@@ -16,11 +15,9 @@ public class ValidBST {
         if (node == null) {
             return true;
         }
-
         if (node.val <= min || node.val >= max) {
             return false;
         }
-
         return (validBSTHelpher(node.left, min, node.val) && validBSTHelpher(node.right, node.val, max));
     }
     
